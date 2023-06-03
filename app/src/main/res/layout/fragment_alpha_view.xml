@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2018 xuexiangjys(xuexiangjys@163.com)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_beautiful_scenery"
+        android:orientation="horizontal">
+
+
+
+        <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/xui_config_color_transparent"
+                android:src="@drawable/icon_avatar1" />
+            <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王小明"
+                android:textColor="@color/default_xrs_outside_line_color"
+                android:textSize="15dp" />
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaButton
+                android:id="@+id/btn_sign"
+                style="@style/RoundButton.Gray"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:background="@color/light_orange"
+                android:text="签到" />
+
+        </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+        <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程名：软件过程与质量"
+                android:textSize="18dp"
+                android:textColor="@color/white" />
+            <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightGray"
+                android:text="上课时间：9:50-12:15"
+                android:textSize="17dp" />
+            <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightGray"
+                android:text="授课教室：主301"
+                android:textSize="17dp" />
+
+        </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+
+    </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/class_ops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/xui_config_content_spacing_vertical"
+            android:overScrollMode="never" />
+
+
+    </com.xuexiang.xui.widget.alpha.XUIAlphaFrameLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2023软件过程与质量"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="课程时间：2023/2/20 至 2023/7/1" />
+
+        <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="授课教师：A老师，B老师" />
+
+        <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="课程简介：一、课程的性质、培养目标 软件过程与质量是面向软件工程专业高年级本科生的专业核心课程。通过本课程的学习，学生应达成如下目标： 1. 理解软件质量与软件过程相关的概念和标准； 2. 理解常规软件生存周期框架中所包含主要阶段和主要活动，掌握瀑布模型中阶段到活动、任务的逐层拆分，以及阶段演进时的实施考虑； 3. 掌握几种经典软件开发过程模型的主要特征及适用范围，能根据项目特征选择合适的软件过程模型..." />
+
+    </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+
+
+
+</LinearLayout>
